@@ -18,10 +18,10 @@ rescue LoadError
   end
 end
 
-module Bootstrap
+module Bootstrap5
   module Rails
     class Engine < ::Rails::Engine
-      initializer 'bootstrap.assets' do |app|
+      initializer 'bootstrap5.assets' do |app|
         %w(stylesheets javascripts).each do |sub|
           app.config.assets.paths << root.join('assets', sub).to_s
         end

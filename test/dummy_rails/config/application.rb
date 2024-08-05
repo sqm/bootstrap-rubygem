@@ -11,7 +11,7 @@ require 'rails'
 end
 
 require 'uglifier'
-require 'bootstrap'
+require 'bootstrap5'
 
 module Dummy
   class Application < Rails::Application
