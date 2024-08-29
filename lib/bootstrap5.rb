@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'bootstrap/version'
+require 'bootstrap5/version'
 require 'popper_js'
 
-module Bootstrap
+module Bootstrap5
   class << self
     # Inspired by Kaminari
     def load!
@@ -58,7 +58,7 @@ module Bootstrap
     private
 
     def register_rails_engine
-      require 'bootstrap/engine'
+      require 'bootstrap5/engine'
     end
 
     def register_sprockets
@@ -72,4 +72,4 @@ module Bootstrap
   end
 end
 
-Bootstrap.load!
+Bootstrap5.load!
